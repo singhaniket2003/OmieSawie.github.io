@@ -1,0 +1,43 @@
+body {
+  background-color: black;
+}
+
+.mainLogo {
+  display: block;
+  float: center;
+  height: 500px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  transition: all 0.35s cubic-bezier(0.7, -0.68, 0.35, 1.69);
+}
+
+.mainLogo:hover {
+  width: 50%;
+  margin-left: 25%;
+  transition: all 0.75s cubic-bezier(0.7, -0.68, 0.35, 1.69);
+}
+
+.welcomeMessage {
+  color: lightblue;
+  text-align: center;
+  font-family: monospace;
+  font-size: 20px;
+  margin-inline: 10%;
+  border: 10px solid darkblue;
+  padding-inline: 10%;
+  animation: text 1.5s 1s linear backwards;
+}
+
+@keyframes text {
+  0% {
+    color: black;
+    border: 0px solid lightblue;
+    margin-top: 100px;
+    letter-spacing: 20px;
+  }
+
+  100% {
+    letter-spacing: 100%;
+  }
+}
